@@ -1,4 +1,4 @@
-.nav-bar {    
+.nav-bar ul{    
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,16 +6,56 @@
     background-color: #333;
 }
 
-li {
+.nav-bar li {
     float: left;
 }
 
-li a {
+.nav-bar li a {
     display: block;
     color: #ffffff;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    /* text-align: center; */
+}
 
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+   padding: 0 20px;
+}
 
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+
+  .footer-section h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+  }
+
+.footer-section ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li{
+    margin: 5px 0;
+}
+
+.footer-section ul li a{
+    color: #fff;
+    text-decoration: none;
+}
