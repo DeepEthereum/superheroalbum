@@ -8,92 +8,233 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="CSS/style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/prova.js"></script>
 </head>
 
 <body>
 
     <!--nav bar -->
-        <nav>
-            <div class="nav-bar">
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="Sticker Album">Sticker Album</a></li>
-                <li><a href="Buy Packs">Buy Packs</a></li>
-                <li><a href="Credit">Credit</a></li>
-                <li><a href="Gallery">Gallery</a></li>
-                <li><a href="Help/FAQ">Help/FAQ</a></li>
-                <li><a href="Login/Register">Login/Register</a></li>
-                <li><a href="Logout">Logout</a></li>
-            </ul>
+    <header class="py-3 mt-2 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/"
+                class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+
+                <!-- Custom Image Logo -->
+                <img src="image/marvel.jpg" alt="Brand-Logo" class="me-3 mb-2 logo-circle">
+
+                <span class="fs-4">Marvel Stickerverse</span>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
         </div>
-        </nav>
+    </header>
+    <div class="navbar navbar-expand-lg bg-info bg-gradient rounded mb-0" style="--bs-bg-opacity: .5;">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+                <a class="navbar-brand col-lg-3 me-0" href="#"></a>
+                <ul class="nav col-lg-6 justify-content-lg-center">
+                    <li class="nav-item"><a class="nav-link link-body-emphasis px-4 active" aria-current="page"
+                            href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link-body-emphasis px-4" href="Sticker Album">Sticker
+                            Album</a></li>
+                    <li class="nav-item"><a class="nav-link link-body-emphasis px-4" href="Buy Packs">Buy Packs</a></li>
+                    <li class="nav-item"><a class="nav-link link-body-emphasis px-4" href="Credit">Credit</a></li>
+                    <li class="nav-item"><a class="nav-link link-body-emphasis px-4" href="Gallery">Gallery</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="html/login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav col-lg-3 justify-content-lg-end">
+                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3">Login</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div>
-        <p></p>
-        <img src="image/marvel.jpg" alt="marvel" height="500px" width="700px"><p></p>
+
+    <!--carousel-->
+    <div class="container">
+        <div id="carousel-slide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-slide" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#carousel-slide" data-bs-slide-to="1"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#carousel-slide" data-bs-slide-to="2"
+                    aria-current="true"></button>
+
+            </div>
+
+            <!-- The slideshow/carousel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <img src="image/comics.jpg" alt="marvel" width="650px" height="500px" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <img src="image/marvel-cartoon.jpg" alt="comics" width="650px" height="500px" class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="6000">
+                    <img src="image/marvel-comics.jpg" alt="avengers" width="650px" height="500px"
+                        class="d-block w-100">
+                </div>
+
+            </div>
+            <!-- Left and right controls/icons-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-slide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
-    <!-- Footer Structure -->
-
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-section">
-                    <h4>Quick link</h4>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="/terms">Terms of Service</a></li>
-                        <li><a href="/privacy">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!-- User Account-->
-                <div class="footer-section">
-                    <h4>User Account</h4>
-                    <ul>
-                        <li><a href="">Login</a></li>
-                        <li><a href="">Register</a></li>
-                        <li><a href="">My profile</a></li>
-                        <li><a href="">My Album</a></li>
-                    </ul>
-                </div>
-
-                <!-- Connect with Us -->
-                <div class="footer-section">
-                    <h4>Connect with Us</h4>
-                    <ul>
-                        <li><a href="">Social Media</a></li>
-                        <li><a href="">Newsletter Subscription</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Information -->
-                <div class="footer-section">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li>Email: <a href="mailto:eternitysudo0@gmail.com">eternitysudo0@gmail.com</a></li>
-                        <li>Phone: +1 (555) 123-4567</li>
-                    </ul>
-                </div>
-
-                <!--Footer Bottom -->
-                <div class="footer-section">
-                    <h4>Connect with Us</h4>
-                    <ul>
-                        <li>Powered by <a href="https://developer.marvel.com">Marvel API</a></li>
-                        <li>&copy; 2024 Superhero Sticker Album. All rights reserved.</li>
-                    </ul>
+    <!-- Testimonial -->
+    <section id="testimonial">
+        <div class="my-0">
+            <div class="pb-4 text-center">
+                <div class="container py-5 bg-body-tertiary">
+                    <h2 class="text-body-emphasis">"Rediscover the magic of stickers, where the Marvel universe
+                        comes to life! Collect, trade, and experience every emotion
+                        like it's the first time."</h2>
+                    <img class="profile-img mt-5" src="./image/StrakTower.jpg" alt="Hero image">
+                    <p class="col-lg-8 mx-auto lead">
+                        Iron Man, Avengers Tower
+                    </p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+        <div class="container mt-0">
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor"
+                            class="bi bi-check2-circle" viewBox="0 0 16 16">
+                            <path
+                                d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" />
+                            <path
+                                d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2">Effortlessly Exciting.</h3>
+                        <p>So thrilling, even Spider-Man couldn’t resist</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor"
+                            class="bi bi-mortarboard" viewBox="0 0 16 16">
+                            <path
+                                d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
+                            <path
+                                d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2">For the True Marvel Fans.</h3>
+                        <p>We've got all the heroes, the greatest heroes.</p>
+
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <div
+                        class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor"
+                            class="bi bi-arrow-through-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a21.86 21.86 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354l-1.5 1.5Zm2.893-4.894A20.419 20.419 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708L5.747 10.96Z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="fs-2">Heroes You Can Trust.</h3>
+                        <p>Find the ultimate Marvel collection or your money back.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Structure -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Quick link</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- User Account-->
+            <div class="footer-section">
+                <h4>User Account</h4>
+                <ul>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Register</a></li>
+                    <li><a href="">My profile</a></li>
+                    <li><a href="">My Album</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="mailto:eternitysudo0@gmail.com">eternitysudo0@gmail.com</a></li>
+                    <li>+1 (555) 123-4567</li>
+                </ul>
+            </div>
+
+            <!--Footer Bottom -->
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <ul>
+                    <li>Powered by <a href="https://developer.marvel.com">Marvel API</a></li>
+                    <li>&copy; 2024 Superhero Sticker Album. All rights reserved.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 
 </html>
